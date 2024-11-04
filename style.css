@@ -328,35 +328,65 @@ header {
         margin-bottom: 15px; /* Space below toggle button */
     }
 
-    /* Home text size adjustments */
+    /* Home Section Adjustments */
+    .home {
+        padding: 60px 20px; /* Added padding for better spacing */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
     .home-text h1 {
         font-size: 2.5rem; /* Reduced for mobile */
+        text-align: center; /* Center text */
+        margin-bottom: 1rem; /* Space below heading */
     }
 
     .home-text p {
         font-size: 0.9rem; /* Adjusted for smaller screens */
+        text-align: center; /* Center text */
+        margin: 0 10px; /* Added margin for readability */
+    }
+
+    .home-img {
+        max-width: 100%; /* Ensure image doesn't exceed screen width */
+        margin-top: 20px; /* Space above image */
+    }
+
+    /* About Section Adjustments */
+    .about {
+        padding: 60px 20px; /* Added padding for better spacing */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
     }
 
     .about-text {
         text-align: center; /* Center text on mobile */
+        margin-bottom: 20px; /* Space below text */
     }
 
     .about-text h2 {
         font-size: 1.5rem; /* Smaller heading for mobile */
+        margin-bottom: 0.5rem; /* Space below heading */
     }
 
     .about-text p {
         font-size: 0.9rem; /* Adjust paragraph size */
+        margin: 0 10px; /* Added margin for readability */
+    }
+
+    .about-image {
+        max-width: 100%; /* Ensure image doesn't exceed screen width */
+        margin-top: 20px; /* Space above image */
     }
 
     /* Button styling */
     .products-container .box .contect a {
         font-size: 0.8rem; /* Reduce button text size for mobile */
     }
+
     .products-container {
         grid-template-columns: repeat(2, 1fr); /* Two products per row on mobile */
     }
-
 
     /* Adjust heading sizes in Products */
     .heading h2 {
