@@ -232,6 +232,19 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
 
+.about-video {
+    display: flex;
+    justify-content: center; /* Center the video */
+    margin: 20px 0; /* Add some spacing above and below */
+}
+
+.about-video video {
+    max-width: 100%; /* Make sure the video is responsive */
+    height: auto; /* Keep the aspect ratio */
+    border: 2px solid #ccc; /* Optional: add a border */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
 /* Products Section */
 .products {
     padding: 3rem 1rem; /* Adjust padding for mobile */
