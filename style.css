@@ -233,16 +233,16 @@ header {
 }
 
 .about-video {
-    display: flex;
-    justify-content: center; /* Center the video */
-    margin: 20px 0; /* Add some spacing above and below */
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Full width */
+    max-width: 100%; /* Ensures it doesn't exceed the container width */
 }
 
 .about-video video {
-    max-width: 100%; /* Make sure the video is responsive */
-    height: auto; /* Keep the aspect ratio */
-    border: 2px solid #ccc; /* Optional: add a border */
-    border-radius: 8px; /* Optional: rounded corners */
+    width: 100%; /* Make the video take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
 }
 
 /* Products Section */
