@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Haj Khalili Carpet Store - Buy Exquisite Carpets with the Highest Quality</title>
+    <meta name="description" content="Haj Khalili Carpet Store, with over 40 years of experience in buying and selling exquisite Iranian carpets. The best quality and price available.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logocircle.png" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Language Switcher Dropdown -->
+            <select id="language-switcher" class="language-switcher">
+                <option value="en"><a href="index-en.html">English</a></option>
+                <option value="fa"><a href="index.html">Persian</a></option>
+                <option value="ar"><a href="index-ar.html">Arabic</a></option>
+            </select>
+        </div>
+    </header>
+    
+    <!-- Home Section -->
+    <section class="home" id="home" dir="rtl">
+        <div class="home-text">
+            <h1>Handwoven Carpets of Kerman</h1>
+            <p>Kerman, as the largest province of Iran, is located in the center of the country. Handwoven carpets of Kerman, like other origins of handwoven carpets in Iran, have specific and distinct features. One of the most important characteristics of Kerman carpets is the three-ply structure of these carpets; in this structure, two thick wefts and one thin weft are present in the structure of the carpet.
+
+                Weavers in Kerman province use two knotting styles: Persian and Turkish. In some rural areas, the Turkish knot style is used, while in central areas, the Persian knot style is employed. The difference between Persian and Turkish knots is in the knotting technique and the structure of the carpets. Carpets woven in the Turkish method are usually sturdy and very thick, whereas carpets woven in the Persian method are soft and thin.
+                
+                Additionally, the dyeing of fibers in Kerman is mostly done traditionally; one of the characteristics of dyeing natural fibers in this region is dyeing natural wool before spinning. This process helps in better dyeing and uniformity of the fibers.
+                
+                One of the most important characteristics of handwoven carpets of Kerman is the very high diversity of weaving styles and the wide range of color palettes in this region.</p>
+        </div>
+        <div class="home-img">
+            <img src="images/main.png" alt="main">
+        </div>
+     </section>
+     
+     <section class="about" id="about" dir="rtl">
+        <div class="about-text">
+            <h2>Haj Khalili Carpet Store</h2>
+            <p>Haj Khalili Store, with over 40 years of brilliant experience in production, preparation, buying and selling carpets, is considered one of the oldest and most reputable centers in this industry throughout Iran. This collection proudly offers carpets of unparalleled quality and reasonable prices, and has always strived to showcase the artistry of outstanding Kerman artisans. Our carpets are not only symbols of Iranian beauty and artistry but also represent the history, culture, and authenticity of this land.</p>
+            <p>At Haj Khalili Store, we believe that every carpet has a unique story, and its weave rises from the depths of Iran's history and culture. Therefore, we strive to meet the needs and tastes of every customer by providing specialized consultations and diverse color options.</p>
+            <p>Authenticity, quality, and artistry are at the core of our activities, and as representatives of the Iranian carpet industry, we strive to play our part in promoting this precious art. Our goal is not only to sell a product but to create a unique experience for our dear customers in choosing and purchasing a carpet.</p>
+        </div>
+        <div class="about-image">
+            <img src="images/logo.jpg" alt="about">
+        </div>
+     </section>
+     
+     <!-- Products Section -->
+     <section class="products" id="products">
+        <div class="heading">
+            <h2>Carpet Gallery</h2>
+        </div>
+        <!-- Container -->
+        <div class="products-container" dir="rtl">
+            <div class="box">
+                <img src="images/1.png" alt="products">
+                <h3>Persian Carpet 1</h3>
+                <div class="contect">
+                    <a href="detail1.html">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/2.png" alt="products">
+                <h3>Persian Carpet 2</h3>
+                <div class="contect">
+                    <a href="detail2.html">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/3.png" alt="products">
+                <h3>Persian Carpet 3</h3>
+                <div class="contect">
+                    <a href="detail3.html">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/4.png" alt="products">
+                <h3>Persian Carpet 4</h3>
+                <div class="contect">
+                    <a href="detail4.html">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/5.png" alt="products">
+                <h3>Persian Carpet 5</h3>
+                <div class="contect">
+                    <a href="detail5.html">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/6.png" alt="products">
+                <h3>Persian Carpet 6</h3>
+                <div class="contect">
+                    <a href="detail6.html">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-box" dir="rtl">
+            <h3> Haj Khalili Carpet Store - Buy Exquisite Carpets with the Highest Quality </h3>
+            <p>Haj Khalili Store, with over 40 years of experience in the production, preparation, buying and selling of carpets throughout Iran, is proud to contribute to this industry and art with the craftsmanship of Kerman artisans at the best quality and price. Authenticity symbolizes our path.</p>
+            <div class="contact">
+                <span><i class='bx bxs-phone'></i>09011058624</span>
+                <span><i class='bx bx-envelope'></i>hajkhalilicarpets@gmail.com</span>
+                <span><i class='bx bx-map'></i>Kerman, Bazaar, Shohada Square, Moshtaghieh St.</span>
+            </div>
+        </div>
+     </section>
+     
+     <!-- Copyright Section -->
+    <div class="copyright">
+        <p>&#169 Copyright by Mohammad Reza Haj Khalili  
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #AB886D; /* Dark navy blue for minimalism */
+    --second-color: #D6C0B3; /* Light grey for subtle backgrounds */
+    --text-color:#493628; /* Soft black for readability */
+    --bg-color:#E4E0E1; /* White for a clean background */
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 15px 20px; /* Slightly increased padding */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo styling */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Desktop menu styling */
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+.menu li a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: var(--text-color); /* Use main color on hover */
+}
+
+/* Toggle button for mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 4px;
+    width: 25px;
+    background-color: var(--second-color);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Sidebar styling */
+@media (max-width: 768px) {
+    /* Hide the desktop menu */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: var(--main-color);
+        height: 100vh;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hidden off-screen initially */
+        transition: left 0.3s ease;
+        padding-top: 60px;
+        z-index: 1000;
+    }
+
+    /* Slide the sidebar in when active */
+    .menu.active {
+        left: 0;
+    }
+
+    /* Display the menu toggle button */
+    .menu-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+
+    /* Style for overlay to dim the background */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Show overlay when menu is active */
+    .overlay.active {
+        display: block;
+    }
+}
+
+.language-switcher {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border: none;
+    margin-left: 10px;
+}
+
+.language-switcher option {
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px; /* Prevents overlap with fixed header */
+    background: #f0e5d7; /* Subtle background */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Centers content */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home-text {
+    max-width: 600px;
+    text-align: center; /* Centers text within the container */
+}
+
+.home-text h1 {
+    font-size: 3.4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-text p {
+    font-size: 1rem; /* Slightly larger for readability */
+    color: var(--text-color);
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.home-img {
+    width: 100%;
+    max-width: 500px; /* Limits image width for balanced look */
+    display: flex;
+    justify-content: center;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 80px; /* Adjusts for fixed header */
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: right; /* Aligns text to match right-to-left direction */
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px; /* Sets a max width to control image size */
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+}
+
+/* Products Section */
+.products {
+    padding: 3rem 1rem; /* Adjust padding for mobile */
+    background-color: #f0e5d7; /* Match background with home section */
+}
+
+.heading h2 {
+    font-size: 2rem; /* Keeps the same styling */
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Products Container */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Automatic fitting for different widths */
+    gap: 1.5rem; /* Space between items */
+    margin-top: 1.5rem;
+}
+
+/* Individual Product Boxes */
+.products-container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1rem;
+    text-align: center;
+}
+
+.products-container .box:hover {
+    transform: translateY(-5px); /* Hover effect for lift */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image Responsive */
+.products-container .box img {
+    width: 100%; /* Ensures the image uses available width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image to fill the box */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Product Title */
+.products-container .box h3 {
+    font-size: 1.2rem; /* Keep the size */
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Product Button */
+.products-container .box .contect {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.products-container .box .contect a {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9rem; /* Smaller button font size for mobile */
+    transition: background 0.3s, color 0.3s;
+}
+
+.products-container .box .contect a:hover {
+    background-color: var(--second-color);
+    color: var(--text-color);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .menu-toggle {
+        margin-bottom: 15px; /* Space below toggle button */
+    }
+
+    /* Home text size adjustments */
+    .home-text h1 {
+        font-size: 2.5rem; /* Reduced for mobile */
+    }
+
+    .home-text p {
+        font-size: 0.9rem; /* Adjusted for smaller screens */
+    }
+
+    .about-text {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    /* Button styling */
+    .products-container .box .contect a {
+        font-size: 0.8rem; /* Reduce button text size for mobile */
+    }
+    .products-container {
+        grid-template-columns: repeat(2, 1fr); /* Two products per row on mobile */
+    }
+
+
+    /* Adjust heading sizes in Products */
+    .heading h2 {
+        font-size: 1.5rem; /* Reduced for mobile */
+    }
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--text-color); /* Dark background for contrast */
+    color: var(--bg-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.footer-box h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-box p {
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.contact i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: var(--main-color);
+}
+/* Copyright Styling */
+.copyright {
+    background-color: var(--main-color); /* Slightly lighter than footer for visual separation */
+    color: var(--bg-color);
+    padding: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle divider */
+    margin-top: -0.5rem; /* Slight overlap for seamless look */
+}
+
+/* Product Details Section */
+.product-details {
+    background-color: #fff; /* White background for the product section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit the width */
+    margin: auto; /* Center the section */
+    padding: 20px; /* Add some padding inside */
+    text-align: center; /* Center all text within the section */
+}
+
+/* Product Container */
+.product-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Product Image */
+.product-image img {
+    max-width: 100%; /* Make image responsive */
+    border-radius: 10px; /* Round corners of the image */
+}
+
+/* Product Info */
+.product-info {
+    margin-top: 20px; /* Space above product info */
+}
+
+.product-info h1 {
+    font-size: 24px; /* Large title */
+    margin-bottom: 10px; /* Space below title */
+    color: #867b73; /* Chocolate color for elegance */
+}
+
+.product-info p {
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.product-info strong {
+    display: block; /* Make the strong text block level */
+    margin-top: 15px; /* Space above */
+    color: #2e8b57; /* A calming green for emphasis */
+}
+
+.product-info i {
+    margin-left: 5px; /* Space between the icon and phone number */
+    color: #2e8b57; /* Match the color to the strong text */
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .product-container {
+        /* No need to change layout for larger screens */
+    }
+}
