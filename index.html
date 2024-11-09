@@ -49,9 +49,13 @@
                 
                 از مهم‌ترین خصوصیات فرش دستباف کرمان تنوع بسیار زیاد شیوه بافت و گستردگی طیف‌های رنگی در این منطقه است.</p>
         </div>
-        <div class="home-img">
-            <img src="images/main.png" alt="main">
+        <div class="landing-page">
+        <div class="carpet-wrap">
+            <div class="carpet carpet-1"></div>
+            <div class="carpet carpet-2"></div>
+            <div class="carpet carpet-3"></div>
         </div>
+    </div>
      </section>
      <section class="about" id="about" dir="rtl">
         <div class="about-text">
@@ -64,13 +68,16 @@
             <img src="images/logo.jpg" alt="about">
         </div>
     </div>
-    <!-- Add video here -->
-    <div class="about-video">
-        <video controls muted>
+   <!-- Add this inside your "about" section or wherever you want the button -->
+<div class="about-video">
+    <button id="play-video-btn">نمایش ویدیو</button>
+    <div id="video-container" style="display: none;">
+        <video id="about-video" controls muted>
             <source src="images/vid.MOV" type="video/mp4">
-            Your browser does not support the video tag.
+            مرورگر شما از ویدیو پشتیبانی نمی‌کند.
         </video>
     </div>
+</div>
      </section>
      <!-- products -->
      <section class="products" id="products">

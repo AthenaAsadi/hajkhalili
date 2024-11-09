@@ -29,6 +29,10 @@ body {
         padding-top: 80; /* Adjust for smaller screens if header height differs */
     }
 }
+.home, .about, .products {
+    padding: 60px 20px;
+}
+
 
 /* Basic reset */
 * {
@@ -189,15 +193,87 @@ header {
     line-height: 1.6;
 }
 
-.home-img {
-    width: 100%;
-    max-width: 500px; /* Limits image width for balanced look */
-    display: flex;
-    justify-content: center;
+/* Main Landing Page Styles */
+.landing-page {
+    text-align: center;
+    position: relative;
 }
 
-.home-img img {
-    width: 100%;
+.carpet-wrap {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carpet {
+    width: 150px;
+    height: 300px;
+    border-radius: 15px;
+    animation: rollOut 2s ease-out forwards;
+    transform-origin: top;
+    background-color: #d6a67a;
+    background: linear-gradient(145deg, #b5895f, #d6a67a);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+/* Existing styles are unchanged */
+
+/* Carpet images */
+.carpet-1 {
+    animation-delay: 0s;
+    background-image: url('images/a1.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+.carpet-2 {
+    animation-delay: 0.3s;
+    background-image: url('images/a2.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+.carpet-3 {
+    animation-delay: 0.6s;
+    background-image: url('images/a3.jfif');
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes rollOut {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carpet {
+        width: 120px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carpet-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 5px; /* Reduce spacing */
+    }
+
+    .carpet {
+        width: 80px; /* Adjust carpet size to fit three in a row */
+        height: 160px;
+    }
 }
 
 .about {
@@ -241,16 +317,60 @@ header {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
 
+/* Responsive styling for video button and container */
 .about-video {
-    max-width: 100%; /* Ensure the video doesn't exceed the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.about-video video {
-    width: 100%; /* Make the video responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove inline spacing */
-    border-radius: 0.5rem;
+#video-container {
+    max-width: 100%;
+    width: 90%;
+    display: none; /* Initially hidden */
 }
+
+#about-video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+#play-video-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#play-video-btn:hover {
+    background-color: #b68857;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    #play-video-btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #play-video-btn {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -346,6 +466,7 @@ header {
     background-color: var(--second-color);
     color: var(--text-color);
 }
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -477,6 +598,7 @@ header {
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle divider */
     margin-top: -0.5rem; /* Slight overlap for seamless look */
 }
+
 
 /* Product Details Section */
 .product-details {
