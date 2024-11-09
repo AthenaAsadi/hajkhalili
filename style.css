@@ -166,7 +166,6 @@ header {
     width: 100%;
     min-height: 100vh;
     padding-top: 80px; /* Prevents overlap with fixed header */
-    background: #f0e5d7; /* Subtle background */
     display: flex;
     align-items: center;
     justify-content: space-around; /* Centers content */
@@ -214,7 +213,6 @@ header {
     border-radius: 15px;
     animation: rollOut 2s ease-out forwards;
     transform-origin: top;
-    background-color: #d6a67a;
     background: linear-gradient(145deg, #b5895f, #d6a67a);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     opacity: 0;
@@ -385,7 +383,6 @@ header {
 /* Products Section */
 .products {
     padding: 3rem 1rem; /* Adjust padding for mobile */
-    background-color: #f0e5d7; /* Match background with home section */
 }
 
 .heading h2 {
