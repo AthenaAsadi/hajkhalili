@@ -649,10 +649,3 @@ header {
     margin-left: 5px; /* Space between the icon and phone number */
     color: #2e8b57; /* Match the color to the strong text */
 }
-
-/* Responsive Design */
-@media (min-width: 600px) {
-    .product-container {
-        /* No need to change layout for larger screens */
-    }
-}
