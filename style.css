@@ -341,7 +341,7 @@ header {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    background-color: #d4a373;
+    background-color:var(--main-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -353,7 +353,7 @@ header {
 }
 
 #play-video-btn:hover {
-    background-color: #b68857;
+    background-color:var(--main-color);
 }
 
 /* Media queries for smaller screens */
