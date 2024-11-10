@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/logocircle.png" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -84,51 +85,47 @@
         <div class="heading">
             <h2>گالری فرش ها</h2>
         </div>
-        <!-- container -->
-        <div class="products-container" dir="rtl">
-            <div class="box">
-                <img src="images/1.png" alt="products">
-                <h3>فرش ایرانی1</h3>
-                <div class="contect">
-                    <a href="detail1.html">جزئیات</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/2.png" alt="products">
-                <h3>فرش ایرانی2</h3>
-                <div class="contect">
-                    <a href="detail2.html">جزئیات</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/3.png" alt="products">
-                <h3>فرش ایرانی3</h3>
-                <div class="contect">
-                    <a href="detail3.html">جزئیات</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/4.png" alt="products">
-                <h3>فرش ایرانی4</h3>
-                <div class="contect">
-                    <a href="detail4.html">جزئیات</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/5.png" alt="products">
-                <h3>فرش ایرانی5</h3>
-                <div class="contect">
-                    <a href="detail5.html">جزئیات</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/6.png" alt="products">
-                <h3>فرش ایرانی6</h3>
-                <div class="contect">
-                    <a href="detail6.html">جزئیات</a>
-                </div>
-            </div>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="card">
+            <div class="font"> <img src="images/1.png" alt="product"> <a href="detail1.html">جزئیات</a></div>
         </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div class="font"> <img src="images/2.png" alt="product"> <a href="detail3.html">جزئیات</a></div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div class="font"> <img src="images/3.png" alt="product"> <a href="detail3.html">جزئیات</a></div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div class="font"> <img src="images/4.png" alt="product">  <a href="detail4.html">جزئیات</a></div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div class="font"> <img src="images/5.png" alt="product"> <a href="detail5.html">جزئیات</a></div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card">
+            <div class="font"> <img src="images/6.png" alt="product"> <a href="detail6.html">جزئیات</a>
+        </div>
+    </div>
+  </div>
     </section>
     <!-- footer -->
      <section class="footer" >
@@ -148,7 +145,7 @@
         <p>&#169 کپی رایت توسط محمدرضا حاج خلیلی  
         </p>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
