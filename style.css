@@ -13,10 +13,10 @@
 }
 
 :root {
-    --main-color: #AB886D; /* Dark navy blue for minimalism */
-    --second-color: #D6C0B3; /* Light grey for subtle backgrounds */
-    --text-color:#493628; /* Soft black for readability */
-    --bg-color:#E4E0E1; /* White for a clean background */
+    --main-color: #6D6E71; /* A modern, neutral gray as a main color */
+    --second-color: #B8BABC; /* Light neutral gray for subtle accents */
+    --text-color: #2F2F2F; /* Dark gray for improved readability and clean typography */
+    --bg-color: #F5F5F5; /* Light gray background for a softer look */
 }
 
 body {
