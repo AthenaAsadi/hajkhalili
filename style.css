@@ -11,7 +11,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 :root {
     --main-color: #6D6E71; /* A modern, neutral gray as a main color */
     --second-color: #B8BABC; /* Light neutral gray for subtle accents */
@@ -381,16 +380,16 @@ header {
     }
 }
 :root {
-    --main-color: #AB886D;  /* Dark beige for primary accents */
-    --second-color: #D6C0B3; /* Light beige for background and subtle accents */
-    --text-color: #493628;   /* Soft black for text */
-    --bg-color: #E4E0E1;     /* Light grayish white for background */
+    --main-color: #6D6E71;  /* Dark beige for primary accents */
+    --second-color: #B8BABC; /* Light beige for background and subtle accents */
+    --text-color: #2F2F2F;   /* Soft black for text */
+    --bg-color: #F5F5F5;     /* Light grayish white for background */
 }
 
 /* Products Section */
 .products {
     padding: 50px 10px;
-    background-color: var(--bg-color); /* Light grayish white */
+    background-color:var(--bg-color);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -403,7 +402,7 @@ header {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--text-color); /* Soft black */
+    color: var(--text-color);
 }
 
 /* Swiper Slider */
@@ -430,7 +429,7 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--second-color); /* Light beige background for cards */
+    background-color:var(--second-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -455,14 +454,14 @@ header {
     display: inline-block;
     margin-top: 10px;
     font-size: 1rem;
-    color: var(--main-color); /* Dark beige link color */
+    color:var(--main-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .card a:hover {
-    color: #493628; /* Soft black hover color for links */
+    color: var(--text-color)
 }
 
 
@@ -627,11 +626,11 @@ header {
 .contact i {
     font-size: 1.2rem;
     margin-right: 0.5rem;
-    color: var(--main-color);
+    color:var(--main-color);
 }
 /* Copyright Styling */
 .copyright {
-    background-color: var(--bg-color); /* Slightly lighter than footer for visual separation */
+    background-color:var(--bg-color);
     color: var(--text-color);
     padding: 1rem;
     font-size: 0.875rem;
@@ -675,7 +674,7 @@ header {
 .product-info h1 {
     font-size: 24px; /* Large title */
     margin-bottom: 10px; /* Space below title */
-    color: #867b73; /* Chocolate color for elegance */
+    color:var(--text-color); /* Chocolate color for elegance */
 }
 
 .product-info p {
